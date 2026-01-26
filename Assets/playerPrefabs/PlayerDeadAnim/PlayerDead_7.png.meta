@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: dc2e7f26d40dd934a9557f22de41a5d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8588819295216780769
+    second: PlayerDead_7_0
+  - first:
+      213: -8582376697004282221
+    second: PlayerDead_7_1
+  - first:
+      213: 8505784746613610080
+    second: PlayerDead_7_2
+  - first:
+      213: 8853772309353791925
+    second: PlayerDead_7_3
+  - first:
+      213: 8347526151930354731
+    second: PlayerDead_7_4
+  - first:
+      213: 2215956628948641664
+    second: PlayerDead_7_5
+  - first:
+      213: 9174809468333852306
+    second: PlayerDead_7_6
+  - first:
+      213: 6016744726153970
+    second: PlayerDead_7_7
+  - first:
+      213: -5563781563627140750
+    second: PlayerDead_7_8
+  - first:
+      213: -1015576896108560349
+    second: PlayerDead_7_9
+  - first:
+      213: 2175039386985289685
+    second: PlayerDead_7_10
+  - first:
+      213: 7509090838947874879
+    second: PlayerDead_7_11
+  - first:
+      213: 8357933846829004459
+    second: PlayerDead_7_12
+  - first:
+      213: -4308996645991892128
+    second: PlayerDead_7_13
+  - first:
+      213: -7102959511321212660
+    second: PlayerDead_7_14
+  - first:
+      213: 1748944053835574157
+    second: PlayerDead_7_15
+  - first:
+      213: -5007497592800492511
+    second: PlayerDead_7_16
+  - first:
+      213: 6819765343264142174
+    second: PlayerDead_7_17
+  - first:
+      213: -2120751755742340227
+    second: PlayerDead_7_18
+  - first:
+      213: 6531421975161455349
+    second: PlayerDead_7_19
+  - first:
+      213: 6747561439352334010
+    second: PlayerDead_7_20
+  - first:
+      213: -4021588138910724750
+    second: PlayerDead_7_21
+  - first:
+      213: -4189720582719591905
+    second: PlayerDead_7_22
+  - first:
+      213: 3464237179960370974
+    second: PlayerDead_7_23
+  - first:
+      213: 1643187977477854563
+    second: PlayerDead_7_24
+  - first:
+      213: 8802910589310954296
+    second: PlayerDead_7_25
+  - first:
+      213: -126308335283671134
+    second: PlayerDead_7_26
+  - first:
+      213: 4518674363944338573
+    second: PlayerDead_7_27
+  - first:
+      213: 2522361049226731782
+    second: PlayerDead_7_28
+  - first:
+      213: 5491882625996752866
+    second: PlayerDead_7_29
+  - first:
+      213: 6729561720038554805
+    second: PlayerDead_7_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerDead_7_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 239
+        width: 820
+        height: 775
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afee3ffc334f3ef0800000000000000
+      internalID: -126308335283671134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e75e3fe790919c44fa070a01500724a8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerDead_7_0: 8588819295216780769
+      PlayerDead_7_1: -8582376697004282221
+      PlayerDead_7_10: 2175039386985289685
+      PlayerDead_7_11: 7509090838947874879
+      PlayerDead_7_12: 8357933846829004459
+      PlayerDead_7_13: -4308996645991892128
+      PlayerDead_7_14: -7102959511321212660
+      PlayerDead_7_15: 1748944053835574157
+      PlayerDead_7_16: -5007497592800492511
+      PlayerDead_7_17: 6819765343264142174
+      PlayerDead_7_18: -2120751755742340227
+      PlayerDead_7_19: 6531421975161455349
+      PlayerDead_7_2: 8505784746613610080
+      PlayerDead_7_20: 6747561439352334010
+      PlayerDead_7_21: -4021588138910724750
+      PlayerDead_7_22: -4189720582719591905
+      PlayerDead_7_23: 3464237179960370974
+      PlayerDead_7_24: 1643187977477854563
+      PlayerDead_7_25: 8802910589310954296
+      PlayerDead_7_26: -126308335283671134
+      PlayerDead_7_27: 4518674363944338573
+      PlayerDead_7_28: 2522361049226731782
+      PlayerDead_7_29: 5491882625996752866
+      PlayerDead_7_3: 8853772309353791925
+      PlayerDead_7_30: 6729561720038554805
+      PlayerDead_7_4: 8347526151930354731
+      PlayerDead_7_5: 2215956628948641664
+      PlayerDead_7_6: 9174809468333852306
+      PlayerDead_7_7: 6016744726153970
+      PlayerDead_7_8: -5563781563627140750
+      PlayerDead_7_9: -1015576896108560349
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

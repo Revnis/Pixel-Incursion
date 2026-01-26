@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
-    public int damage = 10;
+    public float damage;
+    public float knockbackForce;
 
     Collider2D col;
     bool hasHit;
@@ -27,8 +28,17 @@ public class DamageDealer : MonoBehaviour
 
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("Hit");
-            other.GetComponent<BaseEnemy>()?.TakeDamage(damage);
+            BaseEnemy enemy = other.GetComponent<BaseEnemy>();
+            
+            if (enemy != null)
+            {
+                Debug.Log("Hit");
+
+                enemy.TakeDamage(damage);
+
+                enemy.TakeKnockback(transform, knockbackForce);
+            }
+            
             hasHit = true;
         }
     }

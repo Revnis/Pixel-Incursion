@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: d23e41a7409437343ac12a940bce9a84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6554156774115631917
+    second: PlayerDead_5_0
+  - first:
+      213: -661036156281938689
+    second: PlayerDead_5_1
+  - first:
+      213: -7942185048327610488
+    second: PlayerDead_5_2
+  - first:
+      213: -8468341370695058359
+    second: PlayerDead_5_3
+  - first:
+      213: -5345352076301576563
+    second: PlayerDead_5_4
+  - first:
+      213: -2565722323472214765
+    second: PlayerDead_5_5
+  - first:
+      213: -1383713426803254188
+    second: PlayerDead_5_6
+  - first:
+      213: -6064672445230607096
+    second: PlayerDead_5_7
+  - first:
+      213: 670036718437712617
+    second: PlayerDead_5_8
+  - first:
+      213: 4842371135218098162
+    second: PlayerDead_5_9
+  - first:
+      213: 8722428452773546766
+    second: PlayerDead_5_10
+  - first:
+      213: -2481649735166913895
+    second: PlayerDead_5_11
+  - first:
+      213: 1467040625553864559
+    second: PlayerDead_5_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerDead_5_4
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 239
+        width: 820
+        height: 775
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86d5a48b9e71d5b0800000000000000
+      internalID: -5345352076301576563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 101bc499523f3e24d8d30725d26e43fc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerDead_5_0: 6554156774115631917
+      PlayerDead_5_1: -661036156281938689
+      PlayerDead_5_10: 8722428452773546766
+      PlayerDead_5_11: -2481649735166913895
+      PlayerDead_5_12: 1467040625553864559
+      PlayerDead_5_13: -1882916195
+      PlayerDead_5_2: -7942185048327610488
+      PlayerDead_5_3: -8468341370695058359
+      PlayerDead_5_4: -5345352076301576563
+      PlayerDead_5_5: -2565722323472214765
+      PlayerDead_5_6: -1383713426803254188
+      PlayerDead_5_7: -6064672445230607096
+      PlayerDead_5_8: 670036718437712617
+      PlayerDead_5_9: 4842371135218098162
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

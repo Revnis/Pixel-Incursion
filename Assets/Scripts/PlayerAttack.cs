@@ -15,10 +15,13 @@ public class PlayerAttack : MonoBehaviour
 
     bool isAttacking;
 
-    
+    public AudioClip attackSound;
+    private AudioSource audioSource;
 
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
+
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         controller = GetComponent<PlayerController2D>();
@@ -42,14 +45,30 @@ public class PlayerAttack : MonoBehaviour
 
         if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
         {
-           anim.Play("Attack_Side");
+            anim.SetTrigger("AttackSide");
+            
+            if (attackSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(attackSound);
+            }
+        }
+        else if (dir.y > 0)
+        {
+            anim.SetTrigger("AttackUp");
+
+            if (attackSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(attackSound);
+            }
         }
         else
         {
-          if (dir.y > 0)
-            anim.Play("Attack_Up");
-          else
-            anim.Play("Attack_Down");
+            anim.SetTrigger("AttackDown");
+
+            if (attackSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(attackSound);
+            }
         }
     }
     public bool IsAttacking()
@@ -63,6 +82,10 @@ public class PlayerAttack : MonoBehaviour
         isAttacking = false;
         DisableAllHitbox();
        anim.Play("Move");
+    }
+    public void EndAttack()
+    {
+        isAttacking = false;
     }
 
 

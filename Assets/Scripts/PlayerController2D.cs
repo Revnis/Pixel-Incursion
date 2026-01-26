@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController2D : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed;
 
     Vector2 input;
     public Vector2 lastDir = Vector2.down;
@@ -11,6 +11,11 @@ public class PlayerController2D : MonoBehaviour
     Animator anim;
 
     Vector3 originalScale;
+
+    private void Start()
+    {
+        Debug.Log($"Move Speed : {moveSpeed}");
+    }
 
     void Awake()
     {
@@ -53,6 +58,6 @@ public class PlayerController2D : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = input * moveSpeed;
+        rb.linearVelocity = input * moveSpeed;
     }
 }
