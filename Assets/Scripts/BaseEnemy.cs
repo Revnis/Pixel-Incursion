@@ -31,6 +31,9 @@ public class BaseEnemy : MonoBehaviour
 
     public AudioClip takeDamageSound;
     private AudioSource audioSource;
+    
+    [Header("Appearance")]
+    public Color defaultColor = Color.white;
 
     protected bool isKnockedBack = false;
 
@@ -54,6 +57,10 @@ public class BaseEnemy : MonoBehaviour
     {
         currentHP = maxHP;
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        if (sr != null)
+        {
+            sr.color = defaultColor;
+        }
     }
 
     protected virtual void Update()
@@ -158,7 +165,7 @@ public class BaseEnemy : MonoBehaviour
 
         yield return new WaitForSeconds(0.2f);
 
-        sr.color = Color.white;
+        sr.color = defaultColor;
     }
 
     public void TakeKnockback(Transform damageSource, float knockbackForce)

@@ -8,9 +8,9 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("InGameMap1");
     }
 
-    public void GoToOptions()
+    public void GoToTutorial()
     {
-        SceneManager.LoadScene("Options");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void GoToMainMenu()
