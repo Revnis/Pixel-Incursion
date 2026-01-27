@@ -77,21 +77,7 @@ public class PlayerStats : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GainExp(50);
-            Debug.Log("Gain EXP : 50");
-            Debug.Log("Level : " + level);
-            Debug.Log("Max EXP : " + maxExp);
-            Debug.Log("EXP : " + currentExp);
-            Debug.Log("Status Points : " + playerCurrentStatsPoint);
-
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            currentHP = currentHP - 5f;
-            Debug.Log($"HP: {currentHP}");
-        }
+        
     }
     public void GainExp(int expAmount)
     {
