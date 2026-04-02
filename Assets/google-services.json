@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "firebase_url": "https://pixelincursion-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_number": "671892104728",
+    "project_id": "pixelincursion",
+    "storage_bucket": "pixelincursion.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671892104728:android:3827cc7930e72b8de6456d",
+        "android_client_info": {
+          "package_name": "com.ThisisObby.PixelIncursion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3a9IG4FetIEtg1kISPKkArbCS2hyBsbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
