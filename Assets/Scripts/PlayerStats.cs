@@ -182,7 +182,7 @@ public class PlayerStats : MonoBehaviour
 
             if (FirebaseRealtimeDataBase.Instance != null)
             {
-                FirebaseRealtimeDataBase.Instance.RecordDeathCause(causeOfAttack);
+                FirebaseRealtimeDataBase.Instance.RecordDeath(causeOfAttack);
             }
 
             audioSource.PlayOneShot(loseSound);
