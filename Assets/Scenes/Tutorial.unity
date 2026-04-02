@@ -379,6 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 60
@@ -1188,6 +1189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -1500,6 +1502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -2320,6 +2323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -3769,6 +3773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a504ff6196df9a4ea37c7b7918af38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameInputField: {fileID: 0}
 --- !u!4 &383043990
 Transform:
   m_ObjectHideFlags: 0
@@ -4066,6 +4071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -4622,6 +4628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -5029,6 +5036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -5341,6 +5349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -5805,6 +5814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -6117,6 +6127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -6679,6 +6690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -8748,6 +8760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 60
@@ -10336,7 +10349,7 @@ GameObject:
   - component: {fileID: 1021500691}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10843,6 +10856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -41895,6 +41909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -42632,6 +42647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -42944,6 +42960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 20
   currentHP: 0
   minExp: 20
@@ -43501,6 +43518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 20
   currentHP: 0
   minExp: 20
@@ -43828,6 +43846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -44364,6 +44383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -45142,6 +45162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -45670,6 +45691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -45982,6 +46004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -49707,6 +49730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
@@ -50266,6 +50290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7a749d5277b0c41a9178aa298a0dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoblinEnemy
+  enemyName: MonsterType
   maxHP: 30
   currentHP: 0
   minExp: 20
