@@ -18,6 +18,14 @@ public class PlayerAttack : MonoBehaviour
     public AudioClip attackSound;
     private AudioSource audioSource;
 
+    Camera cam;
+
+    void Start()
+    {
+        cam = Camera.main;
+        if (cam == null) Debug.LogError("Ciel: มาสเตอร์คะ! ชิเอลหา Main Camera ใน Scene ไม่เจอค่ะ!");
+    }
+
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -29,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) // ปุ่มฟัน
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Attack();
         }
@@ -37,40 +45,43 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
-        if (isAttacking) return;
+        if (isAttacking || cam == null) return;
 
         isAttacking = true;
 
-        Vector2 dir = controller.lastDir;
+        Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0;
+        Vector2 dirToMouse = (mousePos - transform.position).normalized;
+        float angle = Mathf.Atan2(dirToMouse.y, dirToMouse.x) * Mathf.Rad2Deg;
 
-        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+        if (mousePos.x < transform.position.x)
         {
-            anim.SetTrigger("AttackSide");
-            
-            if (attackSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(attackSound);
-            }
-        }
-        else if (dir.y > 0)
-        {
-            anim.SetTrigger("AttackUp");
-
-            if (attackSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(attackSound);
-            }
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
         else
         {
-            anim.SetTrigger("AttackDown");
-
-            if (attackSound != null && audioSource != null)
-            {
-                audioSource.PlayOneShot(attackSound);
-            }
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
-    }
+
+        if (attackSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(attackSound);
+        }
+
+        if (angle > 60 && angle < 120)
+        {
+            anim.SetTrigger("AttackUp");
+        }
+        else if (angle < -60 && angle > -120)
+        {
+            anim.SetTrigger("AttackDown");
+        }
+        else
+        {
+            anim.SetTrigger("AttackSide");
+        }
+    }   
+
     public bool IsAttacking()
     {
        return isAttacking;
@@ -88,8 +99,21 @@ public class PlayerAttack : MonoBehaviour
         isAttacking = false;
     }
 
+    void FlipTowardsMouse()
+    {
+        if (isAttacking || cam == null) return;
 
+        Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
+        if (mousePos.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        else
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+    }
 
     // ===== Animation Events =====
 

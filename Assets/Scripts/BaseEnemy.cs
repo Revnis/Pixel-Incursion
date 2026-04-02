@@ -4,6 +4,7 @@ using System.Collections;
 public class BaseEnemy : MonoBehaviour
 {
     [Header("Stats")]
+    public string enemyName = "MonsterType";
     public float maxHP = 30f;
     public float currentHP;
 
@@ -91,7 +92,7 @@ public class BaseEnemy : MonoBehaviour
 
         if (targetStats != null)
         {
-            targetStats.TakeDamage((int)attackDamage);
+            targetStats.TakeDamage((int)attackDamage, enemyName);
         }
 
         lastAttackTime = Time.time;

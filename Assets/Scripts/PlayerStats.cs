@@ -110,6 +110,8 @@ public class PlayerStats : MonoBehaviour
             {
                 currentStrength = currentStrength + multiStrength;
 
+                FirebaseRealtimeDataBase.Instance.RecordStatUpgrade("Strength");
+
                 StrengthUpgrade();
 
                 multiStrength = Mathf.Round(multiStrength * 1.5f);
@@ -119,12 +121,16 @@ public class PlayerStats : MonoBehaviour
             {
                 currentAgility++;
 
+                FirebaseRealtimeDataBase.Instance.RecordStatUpgrade("Agility");
+
                 AgilityUpgrade();
             }
             else if (statName == "HP")
             {
                 maxHP = maxHP + multiHP;
                 currentHP = currentHP + multiHP;
+
+                FirebaseRealtimeDataBase.Instance.RecordStatUpgrade("Health Point");
 
                 multiHP = Mathf.Round(multiHP * 1.5f);
 
@@ -151,9 +157,9 @@ public class PlayerStats : MonoBehaviour
         maxExp = Mathf.RoundToInt(maxExp * 1.25f);
     }
 
-    public void TakeDamage(int damageAmout)
+    public void TakeDamage(int damageAmout, string causeOfAttack = "Unknown")
     {
-        if(isDead) return;
+        if (isDead) return;
 
         currentHP = currentHP - damageAmout;
         audioSource.PlayOneShot(playerTakeDamageSound);
@@ -173,6 +179,11 @@ public class PlayerStats : MonoBehaviour
         if (currentHP <= 0)
         {
             Die();
+
+            if (FirebaseRealtimeDataBase.Instance != null)
+            {
+                FirebaseRealtimeDataBase.Instance.RecordDeathCause(causeOfAttack);
+            }
 
             audioSource.PlayOneShot(loseSound);
         }

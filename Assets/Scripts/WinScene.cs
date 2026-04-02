@@ -17,13 +17,17 @@ public class WinScene : MonoBehaviour
     public string nextSceneName = "MainMenu";
 
     [Header("Targets")]
-    public GameObject[] bossObjects; 
+    public GameObject[] bossObjects;
 
-    private bool isGameWon = false; 
+    private bool isGameWon = false;
+
+    private float startTime;
 
     private void Start()
     {
         if (stageTextUI != null) stageTextUI.gameObject.SetActive(false);
+
+        startTime = Time.time;
     }
 
     private void Update()
@@ -33,6 +37,13 @@ public class WinScene : MonoBehaviour
         if (CheckAllBossesDead())
         {
             isGameWon = true;
+
+            float totalPlayTime = Time.time - startTime;
+
+            string savedName = PlayerPrefs.GetString("PlayerName", "Unknown_Hero");
+
+            FirebaseRealtimeDataBase.Instance.RecordGameCompletionTime(savedName, totalPlayTime);
+
             StartCoroutine(ShowWinSequence());
         }
     }

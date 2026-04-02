@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController2D : MonoBehaviour
 {
@@ -12,45 +12,49 @@ public class PlayerController2D : MonoBehaviour
 
     Vector3 originalScale;
 
-    private void Start()
-    {
-        Debug.Log($"Move Speed : {moveSpeed}");
-    }
+    PlayerAttack playerAttack;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         originalScale = transform.localScale;
+
+        playerAttack = GetComponent<PlayerAttack>();
     }
 
     void Update()
     {
-        
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
-        // lastDir
         if (input.x != 0)
             lastDir = new Vector2(Mathf.Sign(input.x), 0);
         else if (input.y != 0)
             lastDir = new Vector2(0, Mathf.Sign(input.y));
 
-        // flip (HitBox + Child)
-        if (lastDir.x > 0.05f)
-            transform.localScale = new Vector3(
-                Mathf.Abs(originalScale.x),
-                originalScale.y,
-                originalScale.z
-            );
-        else if (lastDir.x < -0.05f)
-            transform.localScale = new Vector3(
-                -Mathf.Abs(originalScale.x),
-                originalScale.y,
-                originalScale.z
-            );
 
-        // animator
+        if (playerAttack != null && !playerAttack.IsAttacking())
+        {
+            if (lastDir.x > 0.05f)
+            {
+                transform.localScale = new Vector3(
+                    Mathf.Abs(originalScale.x),
+                    originalScale.y,
+                    originalScale.z
+                );
+            }
+            else if (lastDir.x < -0.05f)
+            {
+                transform.localScale = new Vector3(
+                    -Mathf.Abs(originalScale.x),
+                    originalScale.y,
+                    originalScale.z
+                );
+            }
+        }
+
+        // --- อัปเดต Animator ---
         anim.SetFloat("moveX", input.x);
         anim.SetFloat("moveY", input.y);
         anim.SetFloat("speed", input.sqrMagnitude);
